@@ -1,0 +1,67 @@
+<svg width="800" height="960" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="960" fill="#f0f4f8"/>
+
+  <!-- Neural network visualization -->
+  <defs>
+    <radialGradient id="nodeGrad">
+      <stop offset="0%" style="stop-color:#069D14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A4D8C;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+
+  <!-- Connection lines (synapses) -->
+  <g opacity="0.3">
+    <line x1="100" y1="200" x2="250" y2="350" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="100" y1="200" x2="250" y2="500" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="150" y1="400" x2="250" y2="350" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="150" y1="400" x2="250" y2="500" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="150" y1="600" x2="250" y2="500" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="150" y1="600" x2="250" y2="650" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="100" y1="800" x2="250" y2="650" stroke="#0A4D8C" stroke-width="3"/>
+    <line x1="100" y1="800" x2="250" y2="750" stroke="#0A4D8C" stroke-width="3"/>
+
+    <line x1="250" y1="350" x2="450" y2="400" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="350" x2="450" y2="550" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="500" x2="450" y2="400" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="500" x2="450" y2="550" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="650" x2="450" y2="550" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="650" x2="450" y2="700" stroke="#069D14" stroke-width="3"/>
+    <line x1="250" y1="750" x2="450" y2="700" stroke="#069D14" stroke-width="3"/>
+
+    <line x1="450" y1="400" x2="650" y2="480" stroke="#F2D335" stroke-width="3"/>
+    <line x1="450" y1="550" x2="650" y2="480" stroke="#F2D335" stroke-width="3"/>
+    <line x1="450" y1="700" x2="650" y2="480" stroke="#F2D335" stroke-width="3"/>
+  </g>
+
+  <!-- Neural nodes - Input layer -->
+  <circle cx="100" cy="200" r="25" fill="url(#nodeGrad)"/>
+  <circle cx="150" cy="400" r="25" fill="url(#nodeGrad)"/>
+  <circle cx="150" cy="600" r="25" fill="url(#nodeGrad)"/>
+  <circle cx="100" cy="800" r="25" fill="url(#nodeGrad)"/>
+
+  <!-- Hidden layer 1 -->
+  <circle cx="250" cy="350" r="30" fill="#069D14" opacity="0.8"/>
+  <circle cx="250" cy="500" r="30" fill="#069D14" opacity="0.8"/>
+  <circle cx="250" cy="650" r="30" fill="#069D14" opacity="0.8"/>
+  <circle cx="250" cy="750" r="30" fill="#069D14" opacity="0.8"/>
+
+  <!-- Hidden layer 2 -->
+  <circle cx="450" cy="400" r="30" fill="#0A4D8C" opacity="0.8"/>
+  <circle cx="450" cy="550" r="30" fill="#0A4D8C" opacity="0.8"/>
+  <circle cx="450" cy="700" r="30" fill="#0A4D8C" opacity="0.8"/>
+
+  <!-- Output layer -->
+  <circle cx="650" cy="480" r="40" fill="#F2D335" opacity="0.9"/>
+
+  <!-- Decorative elements -->
+  <g opacity="0.2">
+    <circle cx="600" cy="150" r="60" fill="none" stroke="#069D14" stroke-width="2"/>
+    <circle cx="600" cy="150" r="80" fill="none" stroke="#069D14" stroke-width="2"/>
+    <circle cx="200" cy="100" r="40" fill="none" stroke="#0A4D8C" stroke-width="2"/>
+    <circle cx="700" cy="800" r="70" fill="none" stroke="#F2D335" stroke-width="2"/>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#069D14" text-anchor="middle">IA Network</text>
+</svg>

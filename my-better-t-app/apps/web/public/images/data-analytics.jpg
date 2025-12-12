@@ -1,0 +1,107 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="dataBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2f1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#dataBg)"/>
+
+  <!-- Dashboard frame -->
+  <rect x="50" y="50" width="700" height="900" fill="#fff" rx="20" opacity="0.8"/>
+
+  <!-- Header bar -->
+  <rect x="50" y="50" width="700" height="60" fill="#0A4D8C" rx="20" opacity="0.9"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">Analytics Dashboard</text>
+
+  <!-- Pie chart -->
+  <g transform="translate(200, 250)">
+    <!-- Pie slices -->
+    <path d="M 0,0 L 80,0 A 80,80 0 0,1 40,69.3 Z" fill="#069D14" opacity="0.8"/>
+    <path d="M 0,0 L 40,69.3 A 80,80 0 0,1 -64,48 Z" fill="#0A4D8C" opacity="0.8"/>
+    <path d="M 0,0 L -64,48 A 80,80 0 0,1 -64,-48 Z" fill="#F2D335" opacity="0.8"/>
+    <path d="M 0,0 L -64,-48 A 80,80 0 0,1 80,0 Z" fill="#9C27B0" opacity="0.7"/>
+    <circle cx="0" cy="0" r="35" fill="#fff"/>
+    <!-- Legend -->
+    <rect x="100" y="-60" width="20" height="20" fill="#069D14" opacity="0.8"/>
+    <text x="130" y="-45" font-family="Arial, sans-serif" font-size="14" fill="#333">35%</text>
+    <rect x="100" y="-30" width="20" height="20" fill="#0A4D8C" opacity="0.8"/>
+    <text x="130" y="-15" font-family="Arial, sans-serif" font-size="14" fill="#333">28%</text>
+    <rect x="100" y="0" width="20" height="20" fill="#F2D335" opacity="0.8"/>
+    <text x="130" y="15" font-family="Arial, sans-serif" font-size="14" fill="#333">22%</text>
+    <rect x="100" y="30" width="20" height="20" fill="#9C27B0" opacity="0.7"/>
+    <text x="130" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">15%</text>
+  </g>
+
+  <!-- Bar chart -->
+  <g transform="translate(480, 350)">
+    <text x="60" y="-70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Croissance</text>
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="0" y2="-150" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="0" x2="220" y2="0" stroke="#333" stroke-width="2"/>
+    <!-- Bars -->
+    <rect x="20" y="-60" width="30" height="60" fill="#069D14" opacity="0.8"/>
+    <rect x="65" y="-85" width="30" height="85" fill="#069D14" opacity="0.8"/>
+    <rect x="110" y="-105" width="30" height="105" fill="#0A4D8C" opacity="0.8"/>
+    <rect x="155" y="-130" width="30" height="130" fill="#F2D335" opacity="0.9"/>
+    <!-- Labels -->
+    <text x="35" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Q1</text>
+    <text x="80" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Q2</text>
+    <text x="125" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Q3</text>
+    <text x="170" y="20" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Q4</text>
+  </g>
+
+  <!-- Line graph -->
+  <g transform="translate(100, 650)">
+    <text x="250" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Performance</text>
+    <!-- Grid -->
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#ddd" stroke-width="1"/>
+    <line x1="0" y1="-40" x2="500" y2="-40" stroke="#ddd" stroke-width="1"/>
+    <line x1="0" y1="-80" x2="500" y2="-80" stroke="#ddd" stroke-width="1"/>
+    <line x1="0" y1="-120" x2="500" y2="-120" stroke="#ddd" stroke-width="1"/>
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#333" stroke-width="2"/>
+    <!-- Line plot -->
+    <polyline points="0,0 100,-30 200,-25 300,-60 400,-55 500,-100"
+              fill="none" stroke="#069D14" stroke-width="3"/>
+    <!-- Data points -->
+    <circle cx="0" cy="0" r="5" fill="#069D14"/>
+    <circle cx="100" cy="-30" r="5" fill="#069D14"/>
+    <circle cx="200" cy="-25" r="5" fill="#069D14"/>
+    <circle cx="300" cy="-60" r="5" fill="#0A4D8C"/>
+    <circle cx="400" cy="-55" r="5" fill="#0A4D8C"/>
+    <circle cx="500" cy="-100" r="6" fill="#F2D335"/>
+    <!-- Trend line -->
+    <line x1="0" y1="0" x2="500" y2="-85" stroke="#F2D335" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  </g>
+
+  <!-- KPI Cards -->
+  <g transform="translate(100, 800)">
+    <rect x="0" y="0" width="140" height="80" fill="#069D14" opacity="0.1" rx="10"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">ROI</text>
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#069D14" text-anchor="middle">+247%</text>
+  </g>
+
+  <g transform="translate(280, 800)">
+    <rect x="0" y="0" width="140" height="80" fill="#0A4D8C" opacity="0.1" rx="10"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">Temps</text>
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0A4D8C" text-anchor="middle">-8h</text>
+  </g>
+
+  <g transform="translate(460, 800)">
+    <rect x="0" y="0" width="140" height="80" fill="#F2D335" opacity="0.2" rx="10"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">Satisfaction</text>
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#d68000" text-anchor="middle">98%</text>
+  </g>
+
+  <!-- Decorative data points -->
+  <g opacity="0.3">
+    <circle cx="700" cy="200" r="4" fill="#069D14"/>
+    <circle cx="720" cy="250" r="4" fill="#0A4D8C"/>
+    <circle cx="680" cy="300" r="4" fill="#F2D335"/>
+    <circle cx="710" cy="350" r="4" fill="#069D14"/>
+  </g>
+</svg>
