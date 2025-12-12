@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build -- --filter=web",
+  "outputDirectory": "apps/web/.next",
+  "devCommand": "npm run dev -- --filter=web",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/apps/web/$1"
+    }
+  ]
+}
