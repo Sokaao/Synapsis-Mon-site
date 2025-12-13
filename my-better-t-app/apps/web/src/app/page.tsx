@@ -105,7 +105,7 @@ export default function Home() {
 	return (
 		<div className="min-h-screen bg-white dark:bg-gray-950">
 			{/* Navigation épurée */}
-			<nav className="border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950">
+			<nav className="border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 sticky top-0 z-50">
 				<div className="container mx-auto px-6 py-5">
 					<div className="flex justify-between items-center">
 						<h1 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -143,7 +143,7 @@ export default function Home() {
 			</nav>
 
 			{/* Hero Section épurée */}
-			<section id="accueil" className="py-20 md:py-32 px-6 relative overflow-hidden">
+			<section id="accueil" className="min-h-screen flex items-center px-6 relative overflow-hidden">
 				<div className="container mx-auto max-w-6xl">
 					<div className="grid md:grid-cols-2 gap-12 items-center">
 						<div className="relative z-10">
@@ -163,8 +163,8 @@ export default function Home() {
 							</Link>
 
 							{/* Section "Ils nous font confiance" */}
-							<div className="mt-16">
-								<p className="text-sm text-gray-500 dark:text-gray-500 mb-4">
+							{/*<div className="mt-16">*/}
+								{/*<p className="text-sm text-gray-500 dark:text-gray-500 mb-4">
 									Déjà adoptée par
 								</p>
 								<div className="flex gap-8 items-center opacity-40">
@@ -172,7 +172,7 @@ export default function Home() {
 									<div className="text-2xl font-bold text-gray-400">Agences</div>
 									<div className="text-2xl font-bold text-gray-400">Scale-ups</div>
 								</div>
-							</div>
+							</div>*/}
 						</div>
 
 						{/* Image côté droit avec effet de débordement */}
@@ -196,6 +196,102 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* test début */}
+{/* NOUVELLE SECTION - 3 Chiffres Essentiels */}
+<section className="py-20 md:py-32 px-6 relative overflow-hidden">
+	<div className="container mx-auto max-w-6xl">
+		{/* Titre de section */}
+		<div className="text-center mb-16">
+			<div className="inline-block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+				LE VRAI COÛT DE L'INACTION
+			</div>
+			<h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+				Le vrai coût de l'inaction
+			</h3>
+			<p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+				Pendant que vous lisez ceci, vos équipes perdent du temps et de l'argent. Voici ce que ça coûte vraiment.
+			</p>
+		</div>
+
+		{/* Grille des 3 chiffres */}
+		<div className="grid md:grid-cols-3 gap-8 mb-12">
+			{/* Chiffre 1 - Temps perdu */}
+			<div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+				<div className="mb-4">
+					<div className="text-7xl font-bold text-red-600 mb-3">
+						60%
+					</div>
+					<p className="text-xl text-gray-900 dark:text-white font-semibold mb-3">
+						du temps perdu en tâches répétitives
+					</p>
+					<p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+						Vos équipes ne sont productives que 39% du temps
+					</p>
+				</div>
+				<div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+					<p className="text-xs text-gray-500 dark:text-gray-500">Source : Asana, 2023</p>
+				</div>
+			</div>
+
+			{/* Chiffre 2 - Jours gaspillés */}
+			<div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+				<div className="mb-4">
+					<div className="text-7xl font-bold text-[#F2D335] mb-3">
+						50
+					</div>
+					<p className="text-xl text-gray-900 dark:text-white font-semibold mb-3">
+						jours gaspillés par employé/an
+					</p>
+					<p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+						2 mois complets de travail sans valeur ajoutée
+					</p>
+				</div>
+				<div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+					<p className="text-xs text-gray-500 dark:text-gray-500">Source : TeamStage, 2024</p>
+				</div>
+			</div>
+
+			{/* Chiffre 3 - Coût financier */}
+			<div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+				<div className="mb-4">
+					<div className="text-7xl font-bold text-[#069D14] mb-3">
+						13K€
+					</div>
+					<p className="text-xl text-gray-900 dark:text-white font-semibold mb-3">
+						perdus par employé sans automatisation
+					</p>
+					<p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+						132 000€ pour une équipe de 10 personnes
+					</p>
+				</div>
+				<div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+					<p className="text-xs text-gray-500 dark:text-gray-500">Source : Workplace Stats, 2025</p>
+				</div>
+			</div>
+		</div>
+
+		{/* CTA Box avec urgence */}
+		<div className="bg-gradient-to-r from-[#069D14]/10 to-[#0A4D8C]/10 border-2 border-[#069D14] rounded-2xl p-8 md:p-10 text-center">
+			<p className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+				Pendant que vous lisez ceci, vos concurrents automatisent.
+			</p>
+			<p className="text-xl text-gray-700 dark:text-gray-300 mb-6">
+				<strong className="text-[#069D14]">66% des entreprises</strong> ont déjà franchi le pas.
+			</p>
+			<Link
+				href="/rendez-vous"
+				className="inline-flex items-center gap-2 bg-[#069D14] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#058a12] transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+			>
+				<span>Rejoignez les leaders dès aujourd'hui</span>
+				<ArrowRight className="w-5 h-5" />
+			</Link>
+			<p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
+				✓ Audit gratuit ✓ 30 minutes ✓ Résultats immédiats
+			</p>
+		</div>
+	</div>
+</section>
+{/* test fin */}
 			{/* Section Services avec badge */}
 			<section id="services" className="py-20 px-6 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
 				{/* Image décorative à gauche */}
@@ -557,9 +653,9 @@ export default function Home() {
 					</div>
 
 					{/* Indicateur de position de la souris */}
-					<div className="text-center mt-8 text-sm text-gray-500 dark:text-gray-400">
+					{/*<div className="text-center mt-8 text-sm text-gray-500 dark:text-gray-400">
 						Déplacez votre curseur à gauche ou à droite pour contrôler le défilement
-					</div>
+					</div>*/}
 				</div>
 			</section>
 
@@ -729,7 +825,7 @@ export default function Home() {
 								</div>
 								{/* Badge d'expertise */}
 								<div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-[#069D14] text-white px-6 py-3 rounded-full shadow-xl whitespace-nowrap">
-									<p className="font-bold">10+ ans d'expertise</p>
+									<p className="font-bold">MALLET Frédéric</p>
 								</div>
 							</div>
 						</div>
