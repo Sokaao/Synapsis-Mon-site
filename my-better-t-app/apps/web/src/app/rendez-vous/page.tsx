@@ -23,10 +23,10 @@ export default function RendezVousPage() {
 	return (
 		<div className="min-h-screen bg-white dark:bg-gray-950">
 			{/* Navigation */}
-			<nav className="border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950">
+			<nav className="border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950 sticky top-0 z-50">
 				<div className="container mx-auto px-6 py-5">
 					<div className="flex justify-between items-center">
-						<Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white hover:text-[#069D14] transition-colors">
+						<Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-[#069D14] transition-colors">
 							Synapsis
 						</Link>
 						<Link
@@ -50,7 +50,7 @@ export default function RendezVousPage() {
 						Réservez votre appel de <span className="text-[#069D14]">découverte</span>
 					</h1>
 					<p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-						Félicitations pour cette décision ! Dans 30 minutes, nous échangerons sur vos processus chronophages et explorerons les opportunités d'automatisation qui s'offrent à vous.
+						Pendant ces 30 minutes, nous échangerons sur vos processus chronophages et explorerons les opportunités d'automatisation qui s'offrent à vous.
 					</p>
 				</div>
 			</section>
@@ -70,10 +70,10 @@ export default function RendezVousPage() {
 							</div>
 							<div>
 								<h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-									Discussion approfondie sur vos processus
+									On analyse vos vrais problèmes
 								</h3>
 								<p className="text-gray-600 dark:text-gray-400">
-									Nous échangeons sur vos tâches quotidiennes chronophages et identifions ensemble les processus qui vous font perdre du temps et de l'argent.
+									On identifie exactement ce qui vous fait perdre du temps et de l'argent.
 								</p>
 							</div>
 						</div>
@@ -86,10 +86,10 @@ export default function RendezVousPage() {
 							</div>
 							<div>
 								<h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-									Identification des opportunités
+									Vous repartez avec un plan d'action
 								</h3>
 								<p className="text-gray-600 dark:text-gray-400">
-									Discussion sur les gains potentiels et les axes d'amélioration prioritaires pour votre activité, sans engagement.
+									Gains potentiels chiffrés. Priorités clarifiées. Prochaines étapes définies. Actionnable dès le lendemain.
 								</p>
 							</div>
 						</div>
@@ -102,10 +102,10 @@ export default function RendezVousPage() {
 							</div>
 							<div>
 								<h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-									Proposition d'audit personnalisé
+									Zéro engagement. Zéro pression.
 								</h3>
 								<p className="text-gray-600 dark:text-gray-400">
-									Si pertinent, je vous propose un audit approfondi et chiffré de vos processus pour maximiser votre ROI.
+									Si l'automatisation n'est pas faite pour vous, je vous le dis franchement, et on ne va pas plus loin.
 								</p>
 							</div>
 						</div>
@@ -118,10 +118,10 @@ export default function RendezVousPage() {
 							</div>
 							<div>
 								<h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-									30 minutes chrono
+									30 minutes. Pas une de plus.
 								</h3>
 								<p className="text-gray-600 dark:text-gray-400">
-									Un échange ciblé et efficace, 100% focalisé sur vos besoins et vos défis opérationnels actuels.
+									Je respecte votre temps. Échange ciblé, sans détour, 100% focalisé sur VOS besoins.
 								</p>
 							</div>
 						</div>
@@ -150,7 +150,7 @@ export default function RendezVousPage() {
 							Prêt à transformer votre opérationnel ?
 						</h3>
 						<p className="text-lg mb-6 opacity-90">
-							Choisissez le créneau qui vous convient le mieux ci-dessous
+							Choisissez le créneau qui vous convient le mieux ci-dessus
 						</p>
 						<div className="flex items-center justify-center gap-2">
 							<CheckCircle2 className="w-5 h-5" />
@@ -166,7 +166,7 @@ export default function RendezVousPage() {
 				</div>
 			</section>
 
-			{/* Témoignage / Réassurance */}
+			{/* Témoignage / Réassurance 
 			<section className="py-12 px-6 bg-white dark:bg-gray-950">
 				<div className="container mx-auto max-w-4xl">
 					<div className="text-center">
@@ -192,7 +192,7 @@ export default function RendezVousPage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>*/}
 
 			{/* Footer minimal */}
 			<footer className="border-t border-gray-200 dark:border-gray-800 py-8 px-6">
